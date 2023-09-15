@@ -1,1 +1,37 @@
  
+
+ .css-meme-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /*.slider-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }*/
+
+ .bug-block {
+  background-image: "./assets/img/bug.jpg";
+ }
+
+ .real-life-block {
+  background-image: "./assets/img/real-life.png";
+ }
+
+ .step-block {
+  background-image: "./assets/img/step.jpg";
+ }
+
+ .users-block {
+  background-image: "./assets/img/users.jpg";
+ }
+
+ .bug-block, .real-life-block, .step-block, .users-block {
+  /*position: absolute;*/
+  object-fit: cover;
+ }

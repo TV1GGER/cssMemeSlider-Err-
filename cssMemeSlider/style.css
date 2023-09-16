@@ -114,3 +114,26 @@ body {
   /*position: absolute;*/
   /*object-fit: cover;*/
  }
+
+ .slider-circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.3vw;
+ }
+
+ .slider-circle-bug, .slider-circle-real-life, .slider-circle-step, .slider-circle-users {
+  width: 1vw;
+  height: 1vw;
+  /*border: 0.1vw solid #7faae8;*/
+  border-radius: 50%;
+  background-color: #7faae8;;
+ }
+
+ .slider-control {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }

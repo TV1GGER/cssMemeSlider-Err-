@@ -1,10 +1,73 @@
- 
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+      scroll-behavior: smooth;
+  }
+}
+* {
+padding: 0px;
+margin: 0px;
+border: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Forum';
+  src: url("./assets/fonts/Forum/Forum-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+html {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+}
+
+.outside-layout {
+  width: 100%;
+  background-color: #25282a;
+  padding: 5% 5% 5% 5%;
+}
+
+.slider-content {
+  width: 100vw;
+  height: 150vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 0.2vw solid black;
+  border-radius: 25%;
+  z-index: 20;*/
+}
 
  .css-meme-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
  }
 
  /*.slider-content {
@@ -16,22 +79,38 @@
  }*/
 
  .bug-block {
-  background-image: "./assets/img/bug.jpg";
+  width: 100%;
+  height: 100%;
+  background: url("./assets/img/bug.png") no-repeat center center;
+  background-size: contain;
+  background-color: white;
  }
 
  .real-life-block {
-  background-image: "./assets/img/real-life.png";
+  width: 100%;
+  height: 100%;
+  background: url("./assets/img/real-life.png") no-repeat center center;
+  background-size: contain;
+  background-color: white;
  }
 
  .step-block {
-  background-image: "./assets/img/step.jpg";
+  width: 100%;
+  height: 100%;
+  background: url("./assets/img/step.jpg") no-repeat center center;
+  background-size: contain;
+  background-color: white;
  }
 
  .users-block {
-  background-image: "./assets/img/users.jpg";
+  width: 100%;
+  height: 100%;
+  background: url("./assets/img/users.jpg") no-repeat center center;
+  background-size: contain;
+  background-color: white;
  }
 
  .bug-block, .real-life-block, .step-block, .users-block {
   /*position: absolute;*/
-  object-fit: cover;
+  /*object-fit: cover;*/
  }

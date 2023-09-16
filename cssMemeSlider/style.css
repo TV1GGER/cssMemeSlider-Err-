@@ -137,3 +137,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
  }
+
+ .slider-text-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .slider-text {
+  color: white;
+ }

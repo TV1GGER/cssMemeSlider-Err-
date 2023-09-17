@@ -189,7 +189,6 @@ body {
   height: 100%;
   opacity: 1;
   z-index: 100;
-  transform: translateX(0%);
   transition: .4s;
  }
 
@@ -216,7 +215,6 @@ body {
   height: 100%;
   opacity: 1;
   z-index: 100;
-  transform: translateX(0%);
   transition: .4s;
  }
 
@@ -243,7 +241,6 @@ body {
   height: 100%;
   opacity: 1;
   z-index: 100;
-  transform: translateX(0%);
   transition: .4s;
  }
 
@@ -270,7 +267,6 @@ body {
   height: 100%;
   opacity: 1;
   z-index: 100;
-  transform: translateX(0%);
   transition: .4s;
  }
 

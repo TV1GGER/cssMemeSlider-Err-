@@ -15,11 +15,6 @@ border: none;
 }
 
 @font-face {
-  font-family: 'Forum';
-  src: url("./assets/fonts/Forum/Forum-Regular.ttf");
-}
-
-@font-face {
   font-family: 'Inter';
   src: url("./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
@@ -28,7 +23,6 @@ html {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 body {
@@ -52,6 +46,7 @@ body {
   height: 70vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
   z-index: 900;
  
@@ -144,6 +139,7 @@ span {
  .controls {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
  }
 
@@ -187,8 +183,10 @@ span {
  }
  
  input {
+  width: 0%;
   height: 0%;
   opacity: 0;
+  visibility: hidden;
  }
 
  .slide-bug-input:checked + .bug-block {
@@ -294,4 +292,33 @@ span {
   border-radius: 50%;
   background-color: transparent;
 }
+
+@media screen and (max-width: 1020px) {
+  @media (prefers-reduced-motion: no-preference) { 
+      :root {
+      scroll-behavior: smooth;
+  }}
+
+  .slider-content {
+    gap: 0.2vw;
+  }
+
+  .controls {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .slider-text-wrapper {
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Inter';
+  }
+
+  .slider-circle-bug, .slider-circle-real-life, .slider-circle-step, .slider-circle-users {
+    width: 2vw;
+    height: 2vw;
+   }
+
+}
+
 

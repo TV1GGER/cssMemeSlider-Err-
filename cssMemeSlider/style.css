@@ -131,6 +131,12 @@ body {
   transition: 0.4s;
  }
 
+span {
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+ }
+
  .slider-circle-bug:hover, .slider-circle-real-life:hover, .slider-circle-step:hover, .slider-circle-users:hover {
   background-color: #ffffff;;
  }
